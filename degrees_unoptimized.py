@@ -144,18 +144,19 @@ def shortest_path(source, target):
 
         node = frontier.remove()
 
+        if node.state == target:
+            sol = []
+            while node.parent is not None:
+                sol.append((node.action, node.state))
+                node = node.parent
+            sol.reverse()
+            return sol
+
         explored.add(node.state)
 
         for movie_id, person_id in neighbors_for_person(node.state):
             if not frontier.contains_state(person_id) or person_id not in explored:
                 child = Node(person_id, node, movie_id)
-                if child.state == target:
-                    sol = []
-                    while child.parent is not None:
-                        sol.append((child.action, child.state))
-                        child = child.parent
-                    sol.reverse()
-                    return sol
                 frontier.add(child)
 
     # raise NotImplementedError

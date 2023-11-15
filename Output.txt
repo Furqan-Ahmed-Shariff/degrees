@@ -1,8 +1,0 @@
-Loading data...
-Data loaded.
-Name: Emma Watson
-Name: Jennifer Lawrence
-3 degrees of separation.
-1: Emma Watson and Daniel Radcliffe starred in Harry Potter and the Order of the Phoenix
-2: Daniel Radcliffe and Woody Harrelson starred in Lost in London
-3: Woody Harrelson and Jennifer Lawrence starred in The Hunger Games: Mockingjay - Part 2
